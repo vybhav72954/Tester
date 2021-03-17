@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@dev
+        uses: actions/checkout@main
       - name: Run Action
-        uses: anushkrishnav/Issue-Watcher@main
+        uses: anushkrishnav/Issue-Watcher@dev
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
           author: anushkrishnav
