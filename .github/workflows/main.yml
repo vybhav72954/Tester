@@ -15,5 +15,5 @@ jobs:
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
           author: anushkrishnav
-          repo: anushkrishnav/Issue-Watcher
+          repo: anushkrishnav/Tester
           maxIssue: 2
