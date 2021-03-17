@@ -1,0 +1,19 @@
+name: Issue-Watchers
+ 
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@main
+      - name: Run Action
+        uses: anushkrishnav/Issue-Watcher@main
+        with:
+          token: '${{ secrets.GITHUB_TOKEN }}'
+          author: anushkrishnav
+          repo: anushkrishnav/Issue-Watcher
+          maxIssue: 2
