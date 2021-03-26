@@ -14,6 +14,6 @@ jobs:
         uses: TesseractCoding/Issue_Watcher@main
         with:
           token: '${{ secrets.GITHUB_TOKEN }}'
-          author: anushkrishnav
+          author: '${{github.actor}}'
           repo: anushkrishnav/Tester
           maxIssue: 2
