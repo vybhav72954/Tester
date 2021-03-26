@@ -1,9 +1,6 @@
 name: Issue-Watchers
  
-on:
-  issues:
-    types: [opened]
-
+on: push
 jobs:
   first-job:
     runs-on: ubuntu-latest
