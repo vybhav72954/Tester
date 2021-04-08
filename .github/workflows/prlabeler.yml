@@ -1,7 +1,7 @@
 name: PRlabeler
 on:
   pull_request:
-    types: [opened, closed]
+    types: [opened, closed, reopened]
 
 jobs:
   first-job:
